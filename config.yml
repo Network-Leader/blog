@@ -16,8 +16,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: NL 기술 블로그
+  description: "서울과학기술대학교의 학술 동아리 NL의 기술 블로그 입니다."
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
@@ -45,14 +45,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "https://network-leader.s3.ap-northeast-2.amazonaws.com/favicon.ico"
+    favicon16x16: "https://network-leader.s3.ap-northeast-2.amazonaws.com/favicon-16x16.png"
+    favicon32x32: "https://network-leader.s3.ap-northeast-2.amazonaws.com/favicon-32x32.png>"
+    apple_touch_icon: "https://network-leader.s3.ap-northeast-2.amazonaws.com/apple-touch-icon.png"
+    safari_pinned_tab: "https://network-leader.s3.ap-northeast-2.amazonaws.com/apple-touch-icon.png"
 
   label:
-    text: "Home"
+    text: "NL 팀 블로그"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -74,15 +74,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: "좋은 사람들이 모여 좋은 개발자가 되는 곳, NL 입니다."
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/Network-Leader"
+    - name: dev
+      url: "https://network-leader.com"
 
   analytics:
     google:
