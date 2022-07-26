@@ -39,7 +39,7 @@ jobs:
         run: |
           rm -rf .git/modules
           rm -rf public
-          git submodule update --init
+          git submodule update
           cd public
           git add .
           msg="rebuilding site `date`"
