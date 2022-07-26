@@ -44,6 +44,8 @@ jobs:
       - name: Go To Public folder, and commit sub module
         run: |
           cd public
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
           git add .
           msg="rebuilding site `date`"
           if [ $# -eq 1 ]
