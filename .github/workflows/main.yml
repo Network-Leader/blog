@@ -33,6 +33,7 @@ jobs:
       - name: Echo info
         run: |
           echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+          pwd
           ls -al
 
       - name: Build the project.
