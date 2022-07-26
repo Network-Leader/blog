@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       
       - name: Install homebrew and hugo
         run: |
@@ -34,12 +36,10 @@ jobs:
         run: |
           echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
           pwd
+          git remote -v
 
       - name: Build the project.
-        run: |
-          git submodule update --init
-          ls -al
-          hugo -t PaperMod 
+        run: hugo -t PaperMod 
 
       - name: Go To Public folder, and commit sub module
         run: |
@@ -52,8 +52,7 @@ jobs:
             then msg="$1"
           fi
           git commit -m "$msg"
+          git remote -v
 
       - name: Push source and build repos.
-        run: |
-          git remote -v
-          git push origin main
+        run: git push origin main
