@@ -25,6 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: Install homebrew and hugo
+        run: |
+          ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+          brew install hugo
+      
       - run: echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
       - name: Build the project.
