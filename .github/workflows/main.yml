@@ -37,6 +37,9 @@ jobs:
 
       - name: Go To Public folder, and commit sub module
         run: |
+          rm -rf .git/modules
+          rm -rf public
+          git submodule update --init
           cd public
           git add .
           msg="rebuilding site `date`"
