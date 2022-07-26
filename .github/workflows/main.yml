@@ -43,8 +43,8 @@ jobs:
 
       - name: Go To Public folder, and push new build.
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "<>"
           git remote set-url origin https://TProgramer:${{ secrets.BLOG_PAT }}@github.com/Network-Leader/Network-Leader.github.io.git
           cd public
           git add .
