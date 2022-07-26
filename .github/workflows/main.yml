@@ -41,7 +41,7 @@ jobs:
       - name: Build the project.
         run: hugo -t PaperMod 
 
-      - name: Go To Public folder, and commit sub module
+      - name: Go To Public folder, and push new build.
         run: |
           cd public
           git config user.name "GitHub Actions Bot"
@@ -52,9 +52,5 @@ jobs:
             then msg="$1"
           fi
           git commit -m "$msg"
-          git remote -v
-
-      - name: Push source and build repos.
-        run: |
           git remote -v
           git push origin main
