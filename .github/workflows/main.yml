@@ -34,12 +34,12 @@ jobs:
         run: |
           echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
           pwd
-          ls -al
 
       - name: Build the project.
         run: |
           cd public
           git submodule update --init
+          ls -al
           hugo -t PaperMod 
 
       - name: Go To Public folder, and commit sub module
