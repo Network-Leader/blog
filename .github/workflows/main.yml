@@ -55,4 +55,6 @@ jobs:
           git remote -v
 
       - name: Push source and build repos.
-        run: git push origin main
+        run: |
+          git remote -v
+          git push origin main
