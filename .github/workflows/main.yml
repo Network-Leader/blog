@@ -39,7 +39,7 @@ jobs:
       - name: Build the project.
         run: |
           cd public
-          git submodule update
+          git submodule update --init
           hugo -t PaperMod 
 
       - name: Go To Public folder, and commit sub module
