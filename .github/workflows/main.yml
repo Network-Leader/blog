@@ -37,13 +37,13 @@ jobs:
 
       - name: Build the project.
         run: |
-          cd public
           git submodule update --init
           ls -al
           hugo -t PaperMod 
 
       - name: Go To Public folder, and commit sub module
         run: |
+          cd public
           git add .
           msg="rebuilding site `date`"
           if [ $# -eq 1 ]
