@@ -30,17 +30,19 @@ jobs:
           ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
           brew install hugo
       
-      - run: echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+      - name: Echo info
+        run: |
+          echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+          ls -al
 
       - name: Build the project.
-        run: hugo -t PaperMod 
+        run: |
+          cd public
+          git submodule update
+          hugo -t PaperMod 
 
       - name: Go To Public folder, and commit sub module
         run: |
-          rm -rf .git/modules
-          rm -rf public
-          git submodule update
-          cd public
           git add .
           msg="rebuilding site `date`"
           if [ $# -eq 1 ]
