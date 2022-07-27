@@ -1,21 +1,21 @@
 ---
-title: "My 1st post"
+title: "첫번째 포스팅"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["first","newdeal"]
-author: "뉴딜"
+author: "뉴딜"  
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: false
+draft: true
 hidemeta: false
-comments: false
-description: "###텍스트 체크   하나둘셋   ##텍스트 체크   하나둘셋"
+comments: true
+description: "설명이 들어갈 칸입니다."
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
+disableHLJS: false  
 hideSummary: false
 searchHidden: true
 ShowReadingTime: true
