@@ -8,7 +8,7 @@ author: "뉴딜"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: true
 description: "설명이 들어갈 칸입니다."
