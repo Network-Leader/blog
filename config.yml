@@ -36,7 +36,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: false
@@ -61,7 +61,7 @@ params:
     enabled: false # needs to be explicitly set
     title: NL 팀블로그
     subtitle: "NL 팀 블로그"
-    imageUrl: "https://file2.nocutnews.co.kr/newsroom/image/2022/07/23/202207231237383174_0.jpg"
+    imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -95,11 +95,6 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
   # for search
   # https://fusejs.io/api/options.html
   fuseOpts:
@@ -112,10 +107,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: 카테고리
-      url: /categories/
-      weight: 10
+    - identifier: archives
+      name: 아카이브
+      url: /archives/
+      weight: 30
     - identifier: tags
       name: 태그
       url: /tags/
