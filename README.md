@@ -26,39 +26,41 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 
 ---
 
-## Features/Mods 💥
-
--   Uses Hugo's asset generator with pipelining, fingerprinting, bundling and minification by default.
--   3 Modes:
-    -   [Regular Mode.](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#regular-mode-default-mode)
-    -   [Home-Info Mode.](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode)
-    -   [Profile Mode.](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode)
--   Table of Content Generation (newer implementation).
--   Archive of posts.
--   Social Icons (home-info and profile-mode)
--   Social-Media Share buttons on posts.
--   Menu location indicator.
--   Multilingual support. (with language selector)
--   Taxonomies
--   Cover image for each post (with Responsive image support).
--   Light/Dark theme (automatic theme switch a/c to browser theme and theme-switch button).
--   SEO Friendly.
--   Multiple Author support.
--   Search Page with Fuse.js
--   Other Posts suggestion below a post
--   Breadcrumb Navigation
--   Code Block Copy buttons
--   No webpack, nodejs and other dependencies are required to edit the theme.
-
-Read Wiki For More Details => **[PaperMod - Features](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)**
-
----
 ## How to Post
-
+git clone 이후 해당 명령어를 사용하면 정해진 서식으로부터 새로운 .md 파일을 생성할 수 있습니다.
 ```bash
-# hugo new --kind post <$filepath or $filename.md>
-$ hugo new --kind post AWS/new_post.md
+$ hugo new --kind post archetypes/<포스트 명>.md
 ```
+md파일은 다음과 같은 구조를 가지고 있습니다. 제목과 설명, 저자와 태그 등을 수정하시고 마지막에 있는 "---" 다음 줄부터 마크다운 문법으로 게시물을 작성해 주세요.
+```yaml
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+tags: ["first","newdeal"] #태그 달기
+author: "You" #본인 이름 넣기  
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: true
+draft: false
+hidemeta: false
+comments: true
+description: "설명이 들어갈 칸입니다." #설명 넣기
+canonicalURL: "https://canonical.url/to/page"
+disableHLJS: true 
+disableShare: false
+disableHLJS: false  
+hideSummary: false
+searchHidden: true
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: true
+ShowRssButtonInSectionTermList: true
+UseHugoToc: true
+---
+```
+마크다운으로 어떻게 글들을 쓰냐구요? 놀랍게도 notion 페이지에는 내보내기>Markdown 기능이 있답니다.
+그 외에도 많은 마크다운 에디터들이 있으니 편리하게 사용하면 좋겠죠?
 
 ---
 
