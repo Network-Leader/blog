@@ -61,7 +61,7 @@ params:
     enabled: false # needs to be explicitly set
     title: NL 팀블로그
     subtitle: "NL 팀 블로그"
-    imageUrl: "<img location>"
+    imageUrl: "https://file2.nocutnews.co.kr/newsroom/image/2022/07/23/202207231237383174_0.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
