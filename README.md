@@ -53,6 +53,14 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 Read Wiki For More Details => **[PaperMod - Features](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)**
 
 ---
+## How to Post
+
+```bash
+# hugo new --kind post <$filepath or $filename.md>
+$ hugo new --kind post AWS/new_post.md
+```
+
+---
 
 ## Install/Update 📥
 
