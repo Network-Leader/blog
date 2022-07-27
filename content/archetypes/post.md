@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "뉴딜의 싱글벙글 블로그 대탐험" #제목 넣기
+date: 2022-07-27T19:57:00+09:00
 tags: ["first","newdeal"] #태그 달기
 author: "You" #본인 이름 넣기  
 # author: ["Me", "You"] # multiple authors
@@ -24,3 +24,10 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 ---
 
+### 마이크테스트   
+
+아아
+
+### 마이크테스트2
+
+아아아
