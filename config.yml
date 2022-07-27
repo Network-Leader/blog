@@ -18,7 +18,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: NL 기술 블로그
   description: "서울과학기술대학교의 학술 동아리 NL의 기술 블로그 입니다."
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, NL, 서울과학기술대학교, 서울과기대, 팀 블로그, 동아리, 개발, 알고리즘, 컴퓨터공학과]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -59,8 +59,8 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    title: NL 팀블로그
+    subtitle: "NL 팀 블로그"
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -73,14 +73,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "SEOULTECH 개발 동아리 NL 팀 블로그"
     Content: "좋은 사람들이 모여 좋은 개발자가 되는 곳, NL 입니다."
 
   socialIcons:
     - name: github
       url: "https://github.com/Network-Leader"
     - name: dev
-      url: "https://network-leader.com"
+      url: "http://network-leader.com"
 
   analytics:
     google:
@@ -113,15 +113,15 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: 카테고리
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: 태그
       url: /tags/
       weight: 20
     - identifier: example
-      name: example.org
+      name: 홈페이지 바로가기
       url: https://example.org
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
