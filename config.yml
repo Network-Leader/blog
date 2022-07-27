@@ -107,10 +107,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: archives
-      name: 아카이브
-      url: /archives/
-      weight: 30
+    - identifier: categories
+      name: 카테고리
+      url: /categories/
+      weight: 10
     - identifier: tags
       name: 태그
       url: /tags/
