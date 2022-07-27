@@ -1,5 +1,5 @@
 baseURL: "https://Network-Leader.github.io/"
-title: ExampleSite
+title: NL 팀 블로그
 paginate: 5
 theme: PaperMod
 
@@ -122,7 +122,7 @@ menu:
       weight: 20
     - identifier: example
       name: 홈페이지 바로가기
-      url: https://example.org
+      url: "http://network-leader.com"
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
