@@ -29,7 +29,7 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 ## How to Post
 git clone 이후 해당 명령어를 사용하면 정해진 서식으로부터 새로운 .md 파일을 생성할 수 있습니다.
 ```bash
-$ hugo new --kind post archetypes/<포스트 명>.md
+$ hugo new --kind post posts/<포스트 명>.md
 ```
 md파일은 다음과 같은 구조를 가지고 있습니다. 제목과 설명, 저자와 태그 등을 수정하시고 마지막에 있는 "---" 다음 줄부터 마크다운 문법으로 게시물을 작성해 주세요.
 ```yaml
