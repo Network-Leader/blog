@@ -6,7 +6,7 @@ author: "You" #본인 이름 넣기
 # author: ["Me", "You"] # 공동저자 일 경우
 description: "설명이 들어갈 칸입니다." #설명 넣기
 
-showToc: false
+showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
