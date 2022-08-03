@@ -1,10 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-tags: ["first","newdeal"] #태그 달기
-author: "You" #본인 이름 넣기  
+categories: [""] #카테고리 설정
+tags: [""] #태그 달기
+author: "Me" #본인 이름 넣기  
 # author: ["Me", "You"] # 공동저자 일 경우
-description: "설명이 들어갈 칸입니다." #설명 넣기
+description: "" # 부제목 넣기
 
 showToc: true
 TocOpen: false
@@ -24,4 +25,3 @@ ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 ShareButtons: []
 ---
-
