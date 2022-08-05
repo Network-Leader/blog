@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 contentDir: "content"
 
-googleAnalytics: UA-123-45
+googleAnalytics: G-XRLCLR1WZS
 
 minify:
   disableXML: true

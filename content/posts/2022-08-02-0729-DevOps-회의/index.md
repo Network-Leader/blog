@@ -2,8 +2,8 @@
 title: 0729 DevOps 회의
 date: 2022-08-02T23:52:29+09:00
 categories: ["DevOps"] #카테고리 설정
-tags: ["first","newdeal"] #태그 달기
-author: "Me" #본인 이름 넣기  
+tags: ["number","hanalin"] #태그 달기
+author: "Jiseo" #본인 이름 넣기  
 # author: ["Me", "You"] # 공동저자 일 경우
 description: "" # 부제목 넣기
 
