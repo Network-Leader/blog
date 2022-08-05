@@ -1,30 +1,11 @@
-<h1 align=center>Hugo PaperMod | <a href="https://adityatelange.github.io/hugo-PaperMod/" rel="nofollow">Demo</a></h1>
-
-<h4 align=center>☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive</h4>
-<br>
-
-> Hugo PaperMod is a theme based on [hugo-paper](https://github.com/nanxiaobei/hugo-paper).
-> The goal of this project is to add more features and customization to the og theme.
-
-The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of documentation about Installation, Features with a few more stuff. Make sure you visit it, to get an awesome hands-on experience and get to know about the features ...
-
-**ExampleSite** can be found here: [exampleSite](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite). Demo is built up with [exampleSite](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite) as source.
-
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.83.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.83.0)
-[![Build GH-Pages](https://github.com/adityatelange/hugo-PaperMod/workflows/Build%20GH-Pages/badge.svg)](https://github.com/adityatelange/hugo-PaperMod/deployments/activity_log?environment=github-pages)
-[![GitHub](https://img.shields.io/github/license/adityatelange/hugo-PaperMod)](https://github.com/adityatelange/hugo-PaperMod/blob/master/LICENSE)
-[![hugo-papermod](https://img.shields.io/badge/Hugo--Themes-@PaperMod-blue)](https://themes.gohugo.io/themes/hugo-papermod/)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adityatelange_hugo-PaperMod&metric=alert_status)](https://sonarcloud.io/dashboard?id=adityatelange_hugo-PaperMod)
-![code-size](https://img.shields.io/github/languages/code-size/adityatelange/hugo-PaperMod)
-[![Discord](https://img.shields.io/discord/971046860317921340?label=Discord)](https://discord.gg/ahpmTvhVmp)
 
 ---
-
-<p align="center">
-  <kbd><img src="https://user-images.githubusercontent.com/21258296/114303440-bfc0ae80-9aeb-11eb-8cfa-48a4bb385a6d.png" alt="Mockup image" title="Mockup"/></kbd>
-</p>
-
----
+# 저장소 클론하기
+## 깃 클론시 주의점
+저장소 클론 시 반드시 해당형식으로 clone 명령어를 사용해주세요!!!
+```bash
+git clone --recurse-submodules https://github.com/Network-Leader/blog.git
+```
 
 # How to Post
 ## 직접 포스팅하는 경우
@@ -82,7 +63,7 @@ UseHugoToc: true
 내보낸 Export-@@@@.zip 파일을 clone 한 blog 프로젝트 루트 디렉토리에 넣고 아래 명령어를 사용하면,  
 준비된 쉘스크립트가 정해진 포스팅 형식으로 추출해줄거에요.
 ```bash
-$ bash notion-to-gh-pages.sh
+bash notion-to-gh-pages.sh
 ```
 #
 추출과정이 끝나면 프로젝트 루트 기준 content/posts 폴더에서 본인의 포스팅 폴더이름(스크립트-실행시간-포스팅제목)를 찾은 뒤,  
@@ -121,7 +102,7 @@ ShareButtons: []
 #
 로컬에서 포스팅 결과를 미리 살펴보려면 다음 명령어를 사용해보면 된답니다.
 ```bash
-$ hugo server
+hugo server
 ```
 #
 이후 브라우저에서 http://localhost:1313/ 로 접속하면 적용된 포스트를 미리 확인해볼 수 있어요.  
