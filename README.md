@@ -105,7 +105,10 @@ ShareButtons: []
 hugo server
 ```
 #
-이후 브라우저에서 http://localhost:1313/ 로 접속하면 적용된 포스트를 미리 확인해볼 수 있어요.  
+이후 터미널에 생성된 링크를 Ctrl / CMD + 클릭하면 브라우저에서 변경이 적용된 블로그를 미리 확인해 볼 수 있어요.
+```bash
+Web Server is available at # 이 부분 ==>> http://localhost:1313/ (bind address 127.0.0.1)
+```
 확인 후 프로젝트 main 브랜치에 push 하면, 몇 분내로 블로그 페이지에 적용되는 것을 보실 수 있을거에요!
 #
 ---
